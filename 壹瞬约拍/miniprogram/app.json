@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/activities/activities",
+    "pages/lanuch/lanuch",
+    "pages/message/message",
+    "pages/userCenter/userCenter",
+    "pages/message/getInvite/getInvite",
+    "pages/message/sendInvite/sendInvite",
+    "pages/userCenter/personal/personal",
+    "pages/userCenter/editDetail/editDetail",
+    "pages/userCenter/dailySign/dailySign",
+    "pages/userCenter/activityManage/activityManage",
+    "pages/userCenter/club/clubDetail",
+    "pages/userCenter/authenticationCenter/authenticationCenter",
+    "pages/userCenter/collect/collect",
+    "pages/userCenter/advice/advice",
+    "pages/homePage/homePage",
+    "pages/index/detail/detail",
+    "pages/index/pickYou/pickYou",
+    "pages/lanuch/yuePai/yuePai",
+    "pages/lanuch/work/work",
+    "pages/lanuch/group/group",
+    "pages/divide/divide",
+    "pages/userCenter/myLaunch/myLaunch",
+    "pages/divide/divideDetail",
+    "pages/message/getInvite/inviteDetail",
+    "pages/message/sendInvite/inviteDetail",
+    "pages/message/sendInvite/test",
+    "pages/index/detail/myDetail",
+    "pages/index/detail/checkResult",
+    "pages/userCenter/shareCard/shareCard"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#5397ff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/selectedhome.png"
+      },
+      {
+        "pagePath": "pages/divide/divide",
+        "iconPath": "images/icons/fenlei.png",
+        "selectedIconPath": "images/icons/selectedfenlei.png"
+      },
+      {
+        "pagePath": "pages/lanuch/lanuch",
+        "iconPath": "images/icons/fabu.png",
+        "selectedIconPath": "images/icons/selectedfabu.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "images/icons/message.png",
+        "selectedIconPath": "images/icons/selectedmessage.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "iconPath": "images/icons/lianxiren.png",
+        "selectedIconPath": "images/icons/selectedlianxiren.png"
+      }
+    ]
+  },
+  "resizable": true,
+  "sitemapLocation": "sitemap.json"
+}

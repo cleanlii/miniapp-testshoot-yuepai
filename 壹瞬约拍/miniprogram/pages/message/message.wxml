@@ -1,0 +1,27 @@
+<!--pages/message/message.wxml-->
+<cu-custom bgImage="https://s2.ax1x.com/2019/10/18/Ke1kC9.md.png" >
+</cu-custom>
+<view class='page'>
+  <view class='page__bd'>
+   <view class='cu-list menu'>
+  <view class="cu-item">
+      <navigator class="content" hover-class="none" url="/pages/message/getInvite/getInvite">
+        <text class="icon-notice text-blue"></text>
+        <text class="text-grey">收到的约拍邀请</text>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator class="content" hover-class="none" url="/pages/message/sendInvite/sendInvite">
+        <text class="icon-pullup text-blue"></text>
+        <text class="text-grey">发出的约拍邀请</text>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <view class="content" hover-class="none" bindtap='getQingQiu'>
+        <text class="icon-tag text-blue"></text>
+        <text class="text-grey">收到的报名请求</text>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>

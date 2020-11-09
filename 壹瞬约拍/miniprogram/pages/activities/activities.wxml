@@ -1,0 +1,4 @@
+<!--miniprogram/pages/activities/activities.wxml-->
+<cu-custom bgImage="https://s2.ax1x.com/2019/10/18/Ke1kC9.md.png">
+  <view slot="content">活动</view>
+</cu-custom>

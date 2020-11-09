@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view class=" bg-img padding-tb-xl" style="background-image: url('https://s2.ax1x.com/2019/10/18/KemSF1.png');height:100vh;">
+  <view class="flex padding justify-center margin-top-lg" style='margin-top:100rpx;'>
+    <image src='/images/1.png' style='width:2000%;' mode="widthFix"></image>
+  </view>
+  <view class="flex justify-center">
+  </view>
+  <view class="padding flex justify-center radius " id="title3">
+    <button class="cu-btn bg-skyBlue  margin-tb-sm lg solid s" style="width:400rpx;" open-type="getUserInfo" bindgetuserinfo='getuserinfo' loading='{{loading}}' lang="zh_CN">{{message}}</button>
+  </view>
+</view>

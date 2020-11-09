@@ -1,0 +1,54 @@
+<!--pages/activities/activities.wxml-->
+<cu-custom bgImage="https://s2.ax1x.com/2019/10/18/Ke1kC9.md.png" >
+</cu-custom>
+<swiper class="screen-swiper" circular="true" autoplay="true" interval="4000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key bindtap="openHome" data-item="{{item}}">
+    <view class='bg-white radius shadow-warp margin-top'>
+      <view class="flex justify-center">
+        <view class="text-xl padding text-red icon-hotfill">
+          <text class="text-black text-bold">今日TOP{{item.id}}</text>
+        </view>
+      </view>
+      <view class="flex  justify-center">
+        <view class="cu-avatar xl round " style="background-image:url({{item.url}});"></view>
+      </view>
+      <view class="flex padding-bottom-xs justify-center">
+        <text>{{item.username}}</text>
+      </view>
+      <view class="flex padding-bottom justify-center">
+        <button class=' cu-btn  icon-{{item.isAdd?"":"add"}} padding-left-sm padding-right-sm ' style='background-color:#7878a8;color:white;' catchtap='add' data-index='{{index}}'>{{item.isAdd?'已关注':'关注'}}</button>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+<view class='bg-white'>
+  <view class="weui-flex">
+    <view class="weui-flex__item" bindtap='openDetail' data-name='人像'>
+      <view class="placeholder">
+        <image src='https://s2.ax1x.com/2019/10/19/KmK981.jpg' style="width:100%;" mode='widthFix'></image>
+      </view>
+      <view class="placeholder1 solid s">人像</view>
+    </view>
+    <view class="weui-flex__item" bindtap='openDetail' data-name='前卫'>
+      <view class="placeholder">
+        <image src='https://s2.ax1x.com/2019/10/19/KmKCgx.jpg' style="width:100%;" mode='widthFix'></image>
+      </view>
+      <view class="placeholder1 solid s">前卫</view>
+    </view>
+  </view>
+  <view class="weui-flex">
+    <view class="weui-flex__item" bindtap='openDetail' data-name='美食'>
+      <view class="placeholder">
+        <image src='https://s2.ax1x.com/2019/10/19/Kmuz59.jpg' style="width:100%;" mode='widthFix'></image>
+      </view>
+      <view class="placeholder1 solid s">美食</view>
+    </view>
+    <view class="weui-flex__item" bindtap='openDetail' data-name='风景'>
+      <view class="placeholder">
+        <image src='https://s2.ax1x.com/2019/10/19/KmKPv6.jpg' style="width:100%;" mode='widthFix'></image>
+      </view>
+      <view class="placeholder1 solid s">风景</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,5 @@
+<!--pages/lanuch/group/group.wxml-->
+<cu-custom bgImage="https://s2.ax1x.com/2019/10/18/Ke1kC9.md.png" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">创建小组</view>
+</cu-custom>

@@ -1,0 +1,8 @@
+<!--pages/lanuch/lanuch.wxml-->
+<cu-custom bgImage="https://s2.ax1x.com/2019/10/18/Ke1kC9.md.png">
+  <view slot="content">发布</view>
+</cu-custom>
+<view class='margin-top'></view>
+<view class="padding-xs {{toggleDelay?'animation-slide-bottom':''}}" style="animation-delay: {{item.time}}s;" wx:for="{{list}}" wx:key="{{index}}" bindtap='openLaunch' data-item="{{item}}">
+  <image class="img" id='img{{index}}' src="{{item.src}}" mode="widthFix" />
+</view>
